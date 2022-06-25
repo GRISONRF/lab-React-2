@@ -54,7 +54,6 @@ function TradingCardContainer() {
   const [cards, setCards] = React.useState([]);
 
   function addCard(newCard) {
-    // [...cards] makes a copy of cards. Similar to currentCards = cards[:] in Python
     const currentCards = [...cards];
     // [...currentCards, newCard] is an array containing all elements in currentCards followed by newCard
     setCards([...currentCards, newCard]);
@@ -69,7 +68,6 @@ function TradingCardContainer() {
   const tradingCards = [];
 
   // the following line will print out the value of cards
-  // pay attention to what it is initially and what it is when the component re-renders
   console.log(`cards: `, cards);
 
   for (const currentCard of cards) {
